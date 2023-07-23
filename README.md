@@ -7,8 +7,7 @@ Install: Kitty, Imwheel, feh (wallpaper tool), diodon(clipboard manager), fish s
 OpenRGB(rgb controller), Volumeicon applet, Blueman (BT Applet), Bicom compositor, Flameshot, Alttab (utility written in C for i3wm),
 Thunar file manager, one nerd monofont of choice.
 
-![Uploading Pop!_OS-i3WM-2023-07-19_20-42.png…]()
-
+https://imgur.com/jb3JGJc
 
 Links: 
 
