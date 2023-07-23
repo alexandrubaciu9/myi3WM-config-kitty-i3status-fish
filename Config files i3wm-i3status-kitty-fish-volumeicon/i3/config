@@ -45,7 +45,6 @@ exec --no-startup-id volumeicon
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -115,7 +114,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Brave | 󰨞 Visual Studio Code "
+workspace_layout tabbed
+set $ws1 "1: Brave | 󰨞 Visual Studio Code | 󰻧 Thunderbird "
 set $ws2 "2: Terminal |  Github "
 set $ws3 "3:󰙯 Discord"
 set $ws4 "4: Thunar"
@@ -205,10 +205,6 @@ bar {
         
 }
 
-# Language Layout US/RO command
-
-exec_always --no-startup-id "setxkbmap -model pc104 -layout us,ro -option grp:alt_shift_toggle"
-
 # Display Resolution & Refresh rate
 exec_always xrandr --output DP-1 --mode 2560x1440 --rate 144
 
@@ -221,6 +217,7 @@ exec_always imwheel --kill --buttons "4 5"
 # Allocate applications to workspaces
 for_window [class="Brave"] move to workspace $ws1
 for_window [class="Code"] move to workspace $ws1
+for_window [class="Thunderbird"] move to workspace $ws1
 for_window [class="kitty"] move to workspace $ws2
 for_window [class="Github-desktop"] move to workspace $ws2
 for_window [class="discord"] move to workspace $ws3
@@ -228,6 +225,7 @@ for_window [class="Thunar"] move to workspace $ws4
 
 # Startup Apps
 exec --no-startup-id brave-browser
+exec --no-startup-id thunderbird
 exec --no-startup-id code
 exec --no-startup-id kitty
 exec --no-startup-id github-desktop
