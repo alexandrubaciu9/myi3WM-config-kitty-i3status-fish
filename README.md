@@ -7,7 +7,7 @@ Install: Kitty, Imwheel, feh (wallpaper tool), diodon(clipboard manager), fish s
 OpenRGB(rgb controller), Volumeicon applet, Blueman (BT Applet), Bicom compositor, Flameshot, Alttab (utility written in C for i3wm),
 Thunar file manager, one nerd monofont of choice.
 
-https://imgur.com/jb3JGJc
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/oMIRV1u" data-context="false" ><a href="//imgur.com/a/oMIRV1u"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Links: 
 
