@@ -1,0 +1,44 @@
+    OpenRGB v0.81
+    Commit:  from 
+    Launched: 20230719_005445
+====================================================================================================
+
+0     |Info:    Found file: LED OFF.orp attempting to validate header
+0     |Info:    Valid v4 profile found for LED OFF
+1020  |Info:    ------------------------------------------------------
+1020  |Info:    |               Start device detection               |
+1020  |Info:    ------------------------------------------------------
+1021  |Info:    Initializing HID interfaces: Success
+1024  |Info:    ------------------------------------------------------
+1024  |Info:    |             Detecting I2C interfaces               |
+1024  |Info:    ------------------------------------------------------
+1031  |Info:    Registering I2C interface: /dev/i2c-3 Device 8086:9BC5 Subsystem: 1458:D000
+1031  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:9BC5 Subsystem: 1458:D000
+1031  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1032  |Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+1033  |Info:    Registering I2C interface: /dev/i2c-4 Device 8086:9BC5 Subsystem: 1458:D000
+1033  |Info:    Registering I2C interface: /dev/i2c-2 Device 8086:9BC5 Subsystem: 1458:D000
+1033  |Info:    Registering I2C interface: /dev/i2c-0 Device 8086:06A3 Subsystem: 1458:5001
+1033  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1033  |Info:    Registering I2C interface: /dev/i2c-5 Device 0000:0000 Subsystem: 0000:0000
+1033  |Info:    ------------------------------------------------------
+1033  |Info:    |               Detecting I2C devices                |
+1033  |Info:    ------------------------------------------------------
+1329  |Info:    [ASUS Aura Motherboard] Registering RGB controller
+1899  |Info:    ------------------------------------------------------
+1899  |Info:    |               Detecting I2C PCI devices            |
+1899  |Info:    ------------------------------------------------------
+1900  |Info:    ------------------------------------------------------
+1900  |Info:    |               Detecting HID devices                |
+1900  |Info:    ------------------------------------------------------
+2049  |Info:    [Z490I AORUS ULTRA] Registering RGB controller
+2052  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+2052  |Info:    ------------------------------------------------------
+2052  |Info:    |            Detecting libusb HID devices            |
+2052  |Info:    ------------------------------------------------------
+2052  |Info:    ------------------------------------------------------
+2052  |Info:    |              Detecting other devices               |
+2052  |Info:    ------------------------------------------------------
+2056  |Info:    ------------------------------------------------------
+2056  |Info:    |                Detection completed                 |
+2056  |Info:    ------------------------------------------------------

@@ -1,0 +1,88 @@
+    OpenRGB v0.81
+    Commit:  from 
+    Launched: 20230718_021853
+====================================================================================================
+
+1001  |Info:    Saving detector settings
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    |               Start device detection               |
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1004  |Info:    ------------------------------------------------------
+1004  |Info:    |             Detecting I2C interfaces               |
+1004  |Info:    ------------------------------------------------------
+1006  |Info:    Registering I2C interface: /dev/i2c-3 Device 8086:9BC5 Subsystem: 1458:D000
+1006  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:9BC5 Subsystem: 1458:D000
+1006  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1006  |Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+1006  |Info:    Registering I2C interface: /dev/i2c-4 Device 8086:9BC5 Subsystem: 1458:D000
+1006  |Info:    Registering I2C interface: /dev/i2c-2 Device 8086:9BC5 Subsystem: 1458:D000
+1006  |Info:    Registering I2C interface: /dev/i2c-0 Device 8086:06A3 Subsystem: 1458:5001
+1006  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1006  |Info:    Registering I2C interface: /dev/i2c-5 Device 0000:0000 Subsystem: 0000:0000
+1006  |Info:    ------------------------------------------------------
+1006  |Info:    |               Detecting I2C devices                |
+1006  |Info:    ------------------------------------------------------
+1154  |Info:    [ASUS Aura Motherboard] Registering RGB controller
+1569  |Info:    ------------------------------------------------------
+1569  |Info:    |               Detecting I2C PCI devices            |
+1569  |Info:    ------------------------------------------------------
+1574  |Info:    ------------------------------------------------------
+1574  |Info:    |               Detecting HID devices                |
+1574  |Info:    ------------------------------------------------------
+1751  |Info:    [Z490I AORUS ULTRA] Registering RGB controller
+1754  |Info:    [Logitech G203 Lightsync] Registering RGB controller
+1754  |Info:    ------------------------------------------------------
+1754  |Info:    |            Detecting libusb HID devices            |
+1754  |Info:    ------------------------------------------------------
+1754  |Info:    ------------------------------------------------------
+1754  |Info:    |              Detecting other devices               |
+1754  |Info:    ------------------------------------------------------
+1768  |Info:    ------------------------------------------------------
+1768  |Info:    |                Detection completed                 |
+1768  |Info:    ------------------------------------------------------
+65164 |Info:    Profile loading: FAILED! for ASUS Aura Motherboard @ I2C: /dev/i2c-0, address 0x74
+65164 |Info:    Profile loading: FAILED! for Z490I AORUS ULTRA @ HID: /dev/hidraw5
+65164 |Info:    Profile loading: FAILED! for Logitech G203 Lightsync @ HID: /dev/hidraw1
+67871 |Info:    ------------------------------------------------------
+67871 |Info:    |               Start device detection               |
+67871 |Info:    ------------------------------------------------------
+67871 |Info:    Initializing HID interfaces: Success
+67876 |Info:    ------------------------------------------------------
+67876 |Info:    |             Detecting I2C interfaces               |
+67876 |Info:    ------------------------------------------------------
+67876 |Info:    Registering I2C interface: /dev/i2c-3 Device 8086:9BC5 Subsystem: 1458:D000
+67876 |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:9BC5 Subsystem: 1458:D000
+67876 |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+67876 |Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+67876 |Info:    Registering I2C interface: /dev/i2c-4 Device 8086:9BC5 Subsystem: 1458:D000
+67876 |Info:    Registering I2C interface: /dev/i2c-2 Device 8086:9BC5 Subsystem: 1458:D000
+67877 |Info:    Registering I2C interface: /dev/i2c-0 Device 8086:06A3 Subsystem: 1458:5001
+67877 |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+67877 |Info:    Registering I2C interface: /dev/i2c-5 Device 0000:0000 Subsystem: 0000:0000
+67877 |Info:    ------------------------------------------------------
+67877 |Info:    |               Detecting I2C devices                |
+67877 |Info:    ------------------------------------------------------
+68027 |Info:    [ASUS Aura Motherboard] Registering RGB controller
+68443 |Info:    ------------------------------------------------------
+68443 |Info:    |               Detecting I2C PCI devices            |
+68443 |Info:    ------------------------------------------------------
+68448 |Info:    ------------------------------------------------------
+68448 |Info:    |               Detecting HID devices                |
+68448 |Info:    ------------------------------------------------------
+68616 |Info:    [Z490I AORUS ULTRA] Registering RGB controller
+68620 |Info:    [Logitech G203 Lightsync] Registering RGB controller
+68620 |Info:    ------------------------------------------------------
+68620 |Info:    |            Detecting libusb HID devices            |
+68620 |Info:    ------------------------------------------------------
+68620 |Info:    ------------------------------------------------------
+68620 |Info:    |              Detecting other devices               |
+68620 |Info:    ------------------------------------------------------
+68622 |Info:    ------------------------------------------------------
+68622 |Info:    |                Detection completed                 |
+68622 |Info:    ------------------------------------------------------
+86044 |Info:    Found file: LED OFF.orp attempting to validate header
+86044 |Info:    Valid v4 profile found for LED OFF
+87715 |Info:    Profile loading: Succeeded for ASUS Aura Motherboard @ I2C: /dev/i2c-0, address 0x74
+87715 |Info:    Profile loading: Succeeded for Z490I AORUS ULTRA @ HID: /dev/hidraw5
+87715 |Info:    Profile loading: Succeeded for Logitech G203 Lightsync @ HID: /dev/hidraw1
