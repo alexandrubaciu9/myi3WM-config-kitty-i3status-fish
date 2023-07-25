@@ -7,7 +7,7 @@ Install: Kitty, Imwheel, feh (wallpaper tool), diodon(clipboard manager), fish s
 OpenRGB(rgb controller), Volumeicon applet, Blueman (BT Applet), Bicom compositor, Flameshot, Alttab (utility written in C for i3wm),
 Thunar file manager, one nerd monofont of choice.
 
-![Pop!_OS!](https://github.com/alexandrubaciu9/myi3WM-config-kitty-i3status-fish/assets/54137976/2b6221d8-8010-41ab-bc51-98f41e66a507)
+![Pop!_OS!](https://github.com/alexandrubaciu9/myi3WM-config-kitty-i3status-fish/assets/54137976/573c2f73-c6c2-4923-bfb6-50f3aca42316)
 
 Links: 
 
