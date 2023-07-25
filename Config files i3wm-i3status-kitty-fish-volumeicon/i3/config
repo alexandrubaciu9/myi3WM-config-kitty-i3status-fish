@@ -115,7 +115,7 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 workspace_layout tabbed
-set $ws1 "1: Brave | 󰨞 Visual Studio Code | 󰻧 Thunderbird "
+set $ws1 "1: Brave | 󰨞 Visual Studio Code | 󰻧 Thunderbird | "
 set $ws2 "2: Terminal |  Github "
 set $ws3 "3:󰙯 Discord"
 set $ws4 "4: Thunar"
@@ -217,6 +217,7 @@ exec_always imwheel --kill --buttons "4 5"
 # Allocate applications to workspaces
 for_window [class="Brave"] move to workspace $ws1
 for_window [class="Code"] move to workspace $ws1
+for_window [class="TickTick"] move to workspace $ws1
 for_window [class="Thunderbird"] move to workspace $ws1
 for_window [class="kitty"] move to workspace $ws2
 for_window [class="Github-desktop"] move to workspace $ws2
@@ -233,6 +234,7 @@ exec --no-startup-id discord
 exec --no-startup-id thunar
 exec --no-startup-id flameshot
 exec --no-startup-id diodon
+exec --no-startup-id ticktick
 
 # Autostart picom when starting the i3 window manager
 exec_always --no-startup-id picom -b -f
