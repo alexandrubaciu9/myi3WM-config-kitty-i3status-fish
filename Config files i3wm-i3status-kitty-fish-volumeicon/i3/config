@@ -55,7 +55,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+        bindsym $mod+d exec --no-startup-id rofi -show run -config ~/.config/rofi/config
+#bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -196,8 +197,8 @@ bar {
         statusline #ffffff
         separator #666666
 
-        focused_workspace  #07090a #07090a #ffffff
-        active_workspace   #07090a #5f676a #ffffff
+        focused_workspace  #158eb3 #158eb3 #ffffff
+        active_workspace   #158eb3 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
         urgent_workspace   #2f343a #fc7260 #ffffff
         binding_mode       #2f343a #fc7260 #ffffff
@@ -250,7 +251,7 @@ bindsym Print exec "flameshot gui"
 
 # i3 window decoration theme
 # class                 border  backgr. text    indicator child_border
-client.focused          #07090a #07090a #ffffff #07090a   #07090a
+client.focused          #000000 #158eb3 #ffffff #158eb3   #000000
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #fc7260 #ffffff #fc7260   #fc7260
