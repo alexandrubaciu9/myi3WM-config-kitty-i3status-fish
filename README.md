@@ -1,10 +1,9 @@
-# AlexandruDoarme i3 tiling WM config
 # Friendly config files for i3 Tiling window manager (x11), i3status (default bar), kitty terminal emulator w/fish shell and more.
 # I truly hope that you gonna like it as much as I do!
 
 # Things to do before using them!
 Install: Kitty, Imwheel, feh (wallpaper tool), diodon(clipboard manager), fish shell;
-OpenRGB(rgb controller), Volumeicon applet, Blueman (BT Applet), Bicom compositor, Flameshot, Alttab (utility written in C for i3wm),
+OpenRGB(rgb controller), Volumeicon applet, Blueman (BT Applet), Picom compositor, Flameshot, Alttab (utility written in C for i3wm),
 Thunar file manager, one nerd monofont of choice.
 
 ![Pop!_OS!](https://github.com/alexandrubaciu9/myi3WM-config-kitty-i3status-fish/assets/54137976/573c2f73-c6c2-4923-bfb6-50f3aca42316)
