@@ -207,10 +207,10 @@ bar {
 }
 
 # Display Resolution & Refresh rate
-exec_always xrandr --output DP-1 --mode 2560x1440 --rate 144
+exec_always xrandr --output DisplayPort-1 --mode 2560x1440 --rate 165
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/alexb/Downloads/Wallpapers/2023-07-15_16-24.png
+exec_always feh --bg-fill /home/alexandru/Pictures/Wallpapers/wallhaven-76xdve_2560x1440.png
 
 # Mouse scroll speed boost | imwheel --kill --buttons "4 5"
 exec_always imwheel --kill --buttons "4 5"
