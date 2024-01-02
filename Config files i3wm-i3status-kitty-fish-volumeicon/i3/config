@@ -8,16 +8,18 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-# mod1 - ALT   mod4 - Win
+# mod 1 -> ALT  || mod4 - SuperKey 
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: JetBrains Roboto NerdFont 11
+font pango:monospace 8
+#font pango: JetBrains Roboto NerdFont 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-  font pango:Iosevka bold 11
+#font pango:DejaVu Sans Mono 8
+#font pango: Iosevka bold 11
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -30,6 +32,10 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -39,24 +45,20 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # You need to install volumeicon-alsa first - volume icon applet
 # sudo apt-get install volumeicon-alsa
-exec --no-startup-id volumeicon
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id volumeicon
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
+# sudo apt install kitty
 bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-        bindsym $mod+d exec --no-startup-id rofi -show run -config ~/.config/rofi/config
-#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -102,9 +104,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
+# $mod+space is the default
 bindsym $mod+tab focus mode_toggle
 
 # focus the parent container
@@ -115,17 +118,20 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
+# Font-Awesome is needed for properly display gylphs/app icons 
+# sudo apt install fonts-font-awesome
+
 workspace_layout tabbed
-set $ws1 "1: Brave | 󰨞 Visual Studio Code | 󰻧 Thunderbird | "
-set $ws2 "2: Terminal |  Github "
+set $ws1 "1: Brave | 󰨞 Visual Studio Code | "
+set $ws2 "2: Terminal |  Github "
 set $ws3 "3:󰙯 Discord"
-set $ws4 "4: Thunar"
+set $ws4 "4: Thunar"
 set $ws5 "5:󰓇 Spotify"
-set $ws6 "6: Other"
+set $ws6 "6: Other"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10" 
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -188,59 +194,44 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status -c /home/$USER/.config/i3status/i3status.conf 
-        position top 
-        font pango: JetBrainsMonoNerdFont 11
-        tray_output primary
-        colors {
-        background #000000
-        statusline #ffffff
-        separator #666666
-
-        focused_workspace  #158eb3 #158eb3 #ffffff
-        active_workspace   #158eb3 #5f676a #ffffff
-        inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #fc7260 #ffffff
-        binding_mode       #2f343a #fc7260 #ffffff
-    }	
-        
+        status_command i3status
 }
 
 # Display Resolution & Refresh rate
-exec_always xrandr --output DP-1 --mode 2560x1440 --rate 144
+exec_always xrandr --output DP-1 --mode 2560x1440 --rate 165
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/alexb/Downloads/Wallpapers/wallhaven-zy5jyy_2560x1440.png
+# sudo apt-get install feh
+# exec_always feh --bg-fill /home/alexb/Downloads/Wallpapers/wallhaven-zy5jyy_2560x1440.png
 
 # Mouse scroll speed boost | imwheel --kill --buttons "4 5"
-exec_always imwheel --kill --buttons "4 5"
+# sudo apt-get install imwheel
+# nano  ~/.imwheelrc
+# exec_always imwheel --kill --buttons "4 5"
 
 # Allocate applications to workspaces
 for_window [class="Brave"] move to workspace $ws1
 for_window [class="Code"] move to workspace $ws1
-for_window [class="TickTick"] move to workspace $ws1
-for_window [class="Thunderbird"] move to workspace $ws1
 for_window [class="kitty"] move to workspace $ws2
-for_window [class="Github-desktop"] move to workspace $ws2
 for_window [class="discord"] move to workspace $ws3
 for_window [class="Thunar"] move to workspace $ws4
 
 # Startup Apps
 exec --no-startup-id brave-browser
-exec --no-startup-id thunderbird
 exec --no-startup-id code
 exec --no-startup-id kitty
-exec --no-startup-id github-desktop
 exec --no-startup-id discord
 exec --no-startup-id thunar
 exec --no-startup-id flameshot
 exec --no-startup-id diodon
-exec --no-startup-id ticktick
+
 
 # Autostart picom when starting the i3 window manager
+# 
 exec_always --no-startup-id picom -b -f
 
-# Alt + Tab 
+# Alt + Tab
+# https://github.com/sagb/alttab 
 exec_always --no-startup-id alttab 
 
 # Flameshot bind activation PrtScr key
@@ -258,7 +249,3 @@ client.urgent           #2f343a #fc7260 #ffffff #fc7260   #fc7260
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
-
-
-
-
