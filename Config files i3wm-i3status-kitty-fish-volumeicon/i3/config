@@ -195,6 +195,20 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        #status_command i3status -c /home/$USER/.config/i3status/i3status.conf 
+        position top 
+        #font pango: JetBrainsMonoNerdFont 11
+        #tray_output primary
+        colors {
+        background #000000
+        statusline #ffffff
+        separator #666666
+
+        focused_workspace  #158eb3 #158eb3 #ffffff
+        active_workspace   #158eb3 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #fc7260 #ffffff
+        binding_mode       #2f343a #fc7260 #ffffff
 }
 
 # Display Resolution & Refresh rate
