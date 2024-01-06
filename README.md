@@ -1,5 +1,4 @@
-# Friendly config files for i3 Tiling window manager (x11), i3status (default bar), kitty terminal emulator w/fish shell and more.
-# I truly hope that you gonna like it as much as I do!
+Friendly config files for i3 Tiling window manager (x11), i3status (default bar), kitty terminal emulator w/fish shell and more.
 
 The Ultimate Guide to i3 Customization and keybinds guide in Linux: https://itsfoss.com/i3-customization/
 
@@ -20,6 +19,7 @@ The Ultimate Guide to i3 Customization and keybinds guide in Linux: https://itsf
 13. Patched Custom fonts for Terminal, IDE, desktop: https://www.nerdfonts.com/font-downloads
 14. ALT-TAB Window Switcher designed for minimalistic window managers: https://github.com/sagb/alttab
 15. Lxappearance (Gui Tool for setting up darkmode in GTK+ Apps): https://howtoinstall.co/package/lxappearance
+16. i3Status dependecies: https://github.com/i3/i3status
 
 Not in use: 
 - https://github.com/greshake/i3status-rust - improved i3status bar alternative written in Rust;
