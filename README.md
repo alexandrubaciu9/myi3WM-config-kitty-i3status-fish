@@ -19,7 +19,7 @@ The Ultimate Guide to i3 Customization and keybinds guide in Linux: https://itsf
 12. Blueman BT Applet: https://howtoinstall.co/package/blueman
 13. Patched Custom fonts for Terminal, IDE, desktop: https://www.nerdfonts.com/font-downloads
 14. ALT-TAB Window Switcher designed for minimalistic window managers: https://github.com/sagb/alttab
-15. 
+15. Lxappearance (Gui Tool for setting up darkmode in GTK+ Apps): https://howtoinstall.co/package/lxappearance
 
 Not in use: 
 - https://github.com/greshake/i3status-rust - improved i3status bar alternative written in Rust;
