@@ -20,6 +20,7 @@ The Ultimate Guide to i3 Customization and keybinds guide in Linux: https://itsf
 14. ALT-TAB Window Switcher designed for minimalistic window managers: https://github.com/sagb/alttab
 15. Lxappearance (Gui Tool for setting up darkmode in GTK+ Apps): https://howtoinstall.co/package/lxappearance
 16. i3Status dependencies: https://github.com/i3/i3status
+17. https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature - for i3StatusBar
 
 Not in use: 
 - https://github.com/greshake/i3status-rust - improved i3status bar alternative written in Rust;
