@@ -21,6 +21,11 @@ The Ultimate Guide to i3 Customization and keybinds guide in Linux: https://itsf
 15. Lxappearance (Gui Tool for setting up darkmode in GTK+ Apps): https://howtoinstall.co/package/lxappearance
 16. i3Status dependencies: https://github.com/i3/i3status
 17. https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature - for i3StatusBar
+18. Spotify: https://www.linuxcapable.com/how-to-install-spotify-on-debian-linux/
+19. Ticktick: https://ticktick.com/about/download
+
+
+Fix CPU Temp. in i3status: https://www.youtube.com/watch?v=f_-Q69YRPNQ&t=67s
 
 Not in use: 
 - https://github.com/greshake/i3status-rust - improved i3status bar alternative written in Rust;
