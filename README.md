@@ -1,4 +1,5 @@
 Friendly config files for i3 Tiling window manager (x11), i3status (default bar), kitty terminal emulator w/fish shell and more.
+OS: Pop!_OS 22.04 LTS, latest .iso (works in Ubuntu/Debian Too).
 
 The Ultimate Guide to i3 Customization and keybinds guide in Linux: https://itsfoss.com/i3-customization/
 
