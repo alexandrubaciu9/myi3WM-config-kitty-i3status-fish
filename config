@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # set terminal and menu
-set $term xfce4-terminal
+set $term warp-terminal
 set $menu dmenu_run | xargs swaymsg exec --
 
 # windows and sway
@@ -18,7 +18,7 @@ bindsym $mod+Space exec $menu
 # # bindsym $mod+b exec thorium-browser
 
 #wallpaper
-output * background ~/Pictures/wallhaven-6dgk2x_2560x1440.png fill
+output * background ~/Pictures/Wallpapers/wallhaven-2kl9o6_2560x1440.png fill
 
 #refreshrate
 
@@ -29,6 +29,7 @@ exec --no-startup-id thorium-browser
 exec --no-startup-id code
 # exec --no-startup-id xfce4-terminal
 exec --no-startup-id discord
+for_window [class="discord"] floating enable
 #exec --no-startup-id thunar
 
 # Workspaces:
@@ -120,17 +121,18 @@ exec --no-startup-id discord
 # }
 # bindsym $mod+r mode "resize"
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+# Move the focused window with the same, but add Shift
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
 
 #Status bar
 # Read `man 5 sway-bar` for more information about this section.
@@ -150,7 +152,7 @@ bar {
 # Take a screenshot of selected region to clipboard
 bindsym --to-code Print exec grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot of selected region saved to clipboard"
 
-# input "type:pointer" accel_profile flat
+#input "type:pointer" accel_profile flat
 
 #pulse audio keybindings
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
@@ -168,6 +170,21 @@ exec swayidle -w \
 exec redshift
 exec --no-startup-id redshift -c ~/.config/redshift/config
 
+#imwheel mouse speed boost utility
+exec --no-startup-id imwheel
+
+# authorize polkit
+exec /usr/lib/policykit-1-gnome/polkit/gnome-authentication-agent-1
+
+# notification 
+exec mako
+
+#network applet
+exec nm-applet --indicator
+
+
+#GTK app problem solver
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY WAYSOCK
 
 
 
