@@ -17,20 +17,18 @@ bindsym $mod+Space exec $menu
 # bindsym $mod+e exec code
 # # bindsym $mod+b exec thorium-browser
 
-#wallpaper
-output * background ~/Pictures/Wallpapers/wallhaven-2kl9o6_2560x1440.png fill
-
-#refreshrate
-
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
 output DP-2 mode 2560x1440@165.080Hz
+# You can get the names of your outputs by running: swaymsg -t get_outputs
 
 # Startup Apps
-exec --no-startup-id thorium-browser
-exec --no-startup-id code
-# exec --no-startup-id xfce4-terminal
 exec --no-startup-id discord
 for_window [class="discord"] floating enable
-#exec --no-startup-id thunar
+exec --no-startup-id code
+exec --no-startup-id imwheel
+
+# Pointer Acceleration
+input "type:pointer" accel_profile flat
 
 # Workspaces:
 #
